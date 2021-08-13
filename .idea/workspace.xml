@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ca1addf9-f5d1-4521-8875-89db7873e308" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Apex Interface" />
+        <option value="Apex Class" />
+        <option value="Apex Metadata" />
+      </list>
+    </option>
+  </component>
+  <component name="IlluminatedCloudWorkspaceSettings">
+    <option name="moduleWorkspaceSettings">
+      <map>
+        <entry key="Apex Streams">
+          <value>
+            <ModuleWorkspaceSettings>
+              <option name="moduleContentsLastModified" value="1628867751747" />
+            </ModuleWorkspaceSettings>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="projectWorkspaceSettings">
+      <ProjectWorkspaceSettings>
+        <option name="anonymousApexSettings">
+          <AnonymousApexSettings>
+            <option name="apexLogLevel" value="FINEST" />
+            <option name="documentText" value="Integer[] integers = new Integer[]{2,3,4,15,13,12,5,20,33};&#10;&#10;List&lt;Integer&gt; integerList = ApexStream.getStream(integers).filterChain&#10;        (new Predicate[]{new Predicates.moreThan5Predicate(), new Predicates.lessThan20()}).toIntegerList();&#10;System.debug(integerList);&#10;&#10;List&lt;String&gt; strings = ApexStream.getStream(integers).mapper(new Functions.mapIntegerToString()).toStringList();&#10;&#10;System.debug(strings);&#10;&#10;&#10;List&lt;String&gt; stringsList = ApexStream.getStream(integers).applyCompositionOfFunctions(new Super_Function[]{new Predicates.moreThan5Predicate(), new Predicates.lessThan20(), new Functions.mapIntegerToString()}).toStringList();&#10;&#10;System.debug(stringsList);&#10;" />
+            <option name="splitterProportion" value="0.40076336" />
+          </AnonymousApexSettings>
+        </option>
+        <option name="connectionWorkspaceSettings">
+          <map>
+            <entry key="Apex Streams">
+              <value>
+                <ConnectionWorkspaceSettings>
+                  <option name="buildSuccessDatesBySourceRootRelativePath">
+                    <map>
+                      <entry key="CLASSES/APEXSTREAM.CLS" value="1628869235468" />
+                      <entry key="CLASSES/FUNCTION.CLS" value="1628867745035" />
+                      <entry key="CLASSES/FUNCTIONAL_INTERFACE.CLS" value="1628866086000" />
+                      <entry key="CLASSES/FUNCTIONS.CLS" value="1628867864286" />
+                      <entry key="CLASSES/PREDICATE.CLS" value="1628866432627" />
+                      <entry key="CLASSES/PREDICATES.CLS" value="1628867045426" />
+                      <entry key="CLASSES/SUPER_FUNCTION.CLS" value="1628866102624" />
+                    </map>
+                  </option>
+                </ConnectionWorkspaceSettings>
+              </value>
+            </entry>
+          </map>
+        </option>
+      </ProjectWorkspaceSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1wfnBqvuEfmr0pLWw6s1yL8RiIJ" />
+  <component name="ProjectReloadState">
+    <option name="STATE" value="1" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ca1addf9-f5d1-4521-8875-89db7873e308" name="Default Changelist" comment="" />
+      <created>1628858377440</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1628858377440</updated>
+      <workItem from="1628858379629" duration="342000" />
+      <workItem from="1628858744295" duration="10775000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="ApexOfflineDebuggerBreakpointType">
+          <url>file://$PROJECT_DIR$/src/classes/ApexStream.cls</url>
+          <line>9</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
